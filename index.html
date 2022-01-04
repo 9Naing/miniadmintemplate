@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>miniadmintemplate</title>
+
+     <!-- font-awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- custom css -->
+     <link href="./css/style.css" rel="stylesheet" type="text/css">
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+     
+          <div class="container-fluid">
+
+               <div class="row">
+                    <!-- Start Side Bar -->
+                    <div class="col-lg-2 col-sm-2 border-right sidebars">
+
+                         <div class="nav-brand text-center">
+                              <a href="#" class="nav-link"><i class="fas fa-ghost fa-2x mx-2"></i> <h3 class="d-none d-lg-inline text-uppercase text-wrap">Ghost Admin</h3></a>
+                         </div>
+
+                         <ul class="list-group my-4">
+                              <li class="list-group-item list-group-item-action text-uppercase text-muted">Controls</li>
+                              <li class="list-group-item list-group-item-action active"><i class="fas fa-home me-2"></i><span class="d-none d-lg-inline">Dashboard</span></li>
+                              <li class="list-group-item list-group-item-action"><i class="fas fa-users me-2"></i><span class="d-none d-lg-inline">Users</span> <span class="badge bg-danger rounded-pill float-end d-none d-lg-inline">20</span></li>
+                              <li class="list-group-item list-group-item-action"><i class="fas fa-chart-line me-2"></i><span class="d-none d-lg-inline">Stasticts</span></li>
+                              <li class="list-group-item list-group-item-action"><i class="fas fa-flag me-2"></i><span class="d-none d-lg-inline">Report</span></li>
+                         </ul>
+
+                         <ul class="list-group mb-2">
+                              <li class="list-group-item text-uppercase text-muted">Actions</li>
+                              <li class="list-group-item list-group-item-action"><i class="fas fa-user me-2"></i><span class="d-none d-lg-inline">New User</span></li>
+                              <li class="list-group-item list-group-item-action"><i class="fas fa-edit me-2"></i><span class="d-none d-lg-inline">Update Data</span></li>
+                              <li class="list-group-item list-group-item-action"><i class="far fa-calendar-alt me-2"></i><span class="d-none d-lg-inline">Add Events</span></li>
+                         </ul>
+
+                    </div>
+                    <!-- End Side Bar -->
+
+                    <!-- Start DashBoard Section -->
+                    <div class="col-lg-10 col-sm-10">
+
+                         <nav class="navbar navbar-expand-lg navbar-light ">
+
+                              <div class="flex-fill"></div>
+
+                              <div class="navbar nav">
+                                   <div class="nav-item drop-down">
+
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="fas fa-user-circle text-primary"></i></button>
+     
+                                        <ul class="dropdown-menu">
+                                             <li class="dropdown-item">User Profile</li>
+                                             <li class="dropdown-item">Log Out</li>
+                                        </ul>
+     
+                                        <a href="#"><i class="fas fa-cog"></i></a>
+     
+                                   </div>
+                              </div>
+
+                         </nav>
+
+
+                         <div class="container-fluid bg-secondary p-3">
+                         <!-- alert section -->
+                             <div class="alert alert-info">
+                              <i class="fas fa-download"></i>
+                              <small>A new version of admin dashboard is released! <a href="#">Download Now !</a></small>
+                             </div>
+                         <!-- end alert section -->
+
+                         <!-- start card section -->
+                         <div class="cards">
+
+                              <h6 class="text-uppercase text-light">Quick Stats</h6>
+
+                              <div class="row">
+                                   <div class="col-lg-3 col-sm-12">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h2>1,250</h2>
+                                                  <p class="text-success"><i class="fas fa-chart-line text-success me-2"></i>Daily Visitors</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-3 col-sm-12"> 
+                                        <div class="card">
+                                        <div class="card-body">
+                                             <h2>8,210</h2>
+                                             <p class="text-success"><i class="fas fa-chart-line text-success me-2"></i>Weekly Visitors</p>
+                                        </div>
+                                   </div>
+                              </div>
+
+                                   <div class="col-lg-3 col-sm-12">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h2>12,560</h2>
+                                                  <p class="text-success"><i class="fas fa-chart-line text-success me-2"></i>Monthly Visitors</p>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-lg-3 col-sm-12">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h2>102,250</h2>
+                                                  <p class="text-success"><i class="fas fa-chart-line text-success me-2"></i>Yearly Visitors</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                         <!-- end card section -->
+
+                         <!-- start progress and table section -->
+                         <div class="row mt-5">
+                              <div class="col-lg-4 col-sm-12">
+
+                                   <h5 class="text-uppercase text-light">Location</h5>
+                                   <div class="card"  style="height: 280px;">
+                                        <div class="card-body">
+
+                                             <div class="progress-content mb-3">
+                                                  <small class="text-muted">Regional</small>
+                                                  <div class="progress" style="height: 5px;">
+                                                       <div class="progress-bar bg-danger w-25"></div>
+                                                  </div>
+                                             </div>
+
+                                             <div class="progress-content mb-3">
+                                                  <small class="text-muted">Global</small>
+                                                  <div class="progress" style="height: 5px;">
+                                                       <div class="progress-bar bg-success w-75"></div>
+                                                  </div>
+                                             </div>
+
+                                             <div class="progress-content mb-3">
+                                                  <smal class="text-muted">Local</small>
+                                                       <div class="progress" style="height: 5px;">
+                                                            <div class="progress-bar bg-warning" style="width: 60%"></div>
+                                                       </div>
+                                             </div>
+
+                                             <div class="progress-content mb-3">
+                                                  <small class="text-muted">Internal</small>
+                                                  <div class="progress" style="height: 5px;">
+                                                       <div class="progress-bar bg-info w-50"></div>
+                                                  </div>
+                                             </div>
+
+                                        </div>
+                                   </div>
+
+                              </div>
+
+                              <div class="col-lg-8 col-sm-12">
+
+                                   <h5 class="text-light text-uppercase">Data</h5>
+
+                                   <div class="card"  style="height: 280px;">
+
+                                        <div class="card-body">
+                                             <div class="button-container float-end">
+
+                                                  <button class="btn btn-sm btn-outline-secondary">
+                                                       <i class="fas fa-search"></i>
+                                                  </button>
+
+                                                  <button class="btn btn-sm btn-outline-secondary">
+                                                       <i class="fas fa-sort-amount-up"></i>
+                                                  </button>
+
+                                                  <button class="btn btn-sm btn-outline-secondary">
+                                                       <i class="fas fa-filter"></i>
+                                                  </button>
+
+                                             </div>
+
+                                             <table class="table text-center">
+
+                                                  <thead>
+                                                       <tr>
+                                                            <td>ID</td>
+                                                            <td>Age Group</td>
+                                                            <td>Data</td>
+                                                            <td>Progress</td>
+                                                       </tr>
+                                                  </thead>
+
+                                                  <tbody>
+                                                       <tr>
+                                                            <td>1</td>
+                                                            <td>20-30</td>
+                                                            <td>19%</td>
+                                                            <td><i class="fas fa-chart-pie"></i></td>
+                                                       </tr>
+
+                                                       <tr>
+                                                            <td>1</td>
+                                                            <td>30-40</td>
+                                                            <td>40%</td>
+                                                            <td><i class="fas fa-chart-bar"></i></td>
+                                                       </tr>
+
+                                                       <tr>
+                                                            <td>1</td>
+                                                            <td>40-50</td>
+                                                            <td>29%</td>
+                                                            <td><i class="fas fa-chart-line"></i></td>
+                                                       </tr>
+
+                                                       <tr>
+                                                            <td>1</td>
+                                                            <td>>50</td>
+                                                            <td>30%</td>
+                                                            <td><i class="fas fa-chart-pie"></i></td>
+                                                       </tr>
+                                                  </tbody>
+
+                                             </table>
+                                        </div>
+
+                                   </div>
+
+                              </div>
+                         </div>
+                         <!-- start progress and table section -->
+
+                         </div>
+                
+
+ 
+
+                    </div>
+                     <!-- End DashBoard Section -->
+                    
+               </div>
+          
+          </div>
+ 
+
+
+
+     <!-- custom js -->
+     <script src="./js/app.js" type="text/javascript"></script>
+
+     <!-- bootstrap js bundle -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
